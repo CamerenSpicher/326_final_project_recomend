@@ -1,0 +1,52 @@
+
+Project Documentation: College Park Restaurant Recommender
+
+Project Overview
+
+This Python-based application recommends restaurants in College Park, Maryland based on user preferences such as cuisine, dietary restrictions, price range, and ambiance. It filters options from a CSV dataset and provides tailored suggestions to help users quickly discover suitable dining spots.
+
+How to Run the Program
+
+1. Make sure you have Python 3 installed.
+2. Place the following files in the same directory (or any csv organized with the same column structure):
+
+  `restaurant_recommender.py`
+  `college_park_restaurants_detailed.csv`
+3. Open your terminal
+4. Navigate to the project folder
+5. Run the program with the following command:
+  python restaurant_recommender.py
+   
+
+How to Use the Program
+
+Upon running, the program will:
+
+- Prompt you to enter your dining preferences.
+- Accept optional or specific input for:
+
+  Cuisine type (e.g., "Pizza", "Mexican", or "Any")
+  Dietary restriction (e.g., "Vegan", "No", or leave blank)
+  Maximum meal price (e.g., `20.00`)
+  Ambiance (e.g., "Casual", "Family-Friendly", or "Any")
+Based on your inputs, it will filter and display a list of matching restaurants including name, price, description, and address.
+  If no matches are found, the program will clearly state that.
+
+Annotated Bibliography / Sources Used
+
+`college_park_restaurants_detailed.csv`
+    Hand-curated dataset containing real and representative restaurant information in the College Park area.*
+    Used as the data backbone for all restaurant recommendations.
+
+Python `csv` module (standard library)
+    [Python CSV documentation](https://docs.python.org/3/library/csv.html)
+    Used to load and parse restaurant data from the provided CSV file.
+
+Python `unittest` module (standard library)
+    [Python unittest documentation](https://docs.python.org/3/library/unittest.html)
+    Used to validate core class logic (`matches_preferences`) and recommendation outcomes.
+
+Stack Overflow
+    General references for edge case handling, string parsing, and writing robust test cases.
+    [https://stackoverflow.com](https://stackoverflow.com)
+
